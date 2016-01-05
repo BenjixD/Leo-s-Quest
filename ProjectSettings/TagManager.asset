@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Background
+  - Floor
+  - Wall
+  - Ceiling
+  - Interactive Object
+  - Uninteractive Object
+  - Enemy
+  - Projectile
+  - Player
+  - Effects
   layers:
   - Default
   - TransparentFX
@@ -13,26 +23,26 @@ TagManager:
   - UI
   - 
   - 
+  - Background
+  - Floor
+  - Wall
+  - Ceiling
+  - 
+  - 
+  - Interactive Object
+  - Uninteractive Object
   - 
   - 
   - 
+  - Enemy
+  - Projectile
+  - 
+  - 
+  - Player
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Effects
   - 
   - 
   - 
@@ -40,4 +50,34 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 563103133
+    locked: 0
+  - name: Floor
+    uniqueID: 3738750195
+    locked: 0
+  - name: Wall
+    uniqueID: 883216243
+    locked: 0
+  - name: Interactive Object
+    uniqueID: 3625813253
+    locked: 0
+  - name: Uninteractive Object
+    uniqueID: 1144662175
+    locked: 0
+  - name: Enemy
+    uniqueID: 408198457
+    locked: 0
+  - name: Player
+    uniqueID: 2559037559
+    locked: 0
+  - name: Projectile
+    uniqueID: 3655296861
+    locked: 0
+  - name: Ceiling
+    uniqueID: 4287699119
+    locked: 0
+  - name: Effects
+    uniqueID: 900363747
     locked: 0
