@@ -583,11 +583,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 70551858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09319552, y: 1.2486213, z: 0}
+  m_LocalPosition: {x: 0.09319552, y: -1.7513787, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 2058259242}
+  m_RootOrder: 235
 --- !u!61 &70551862
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2956,7 +2956,7 @@ Transform:
   m_LocalScale: {x: 2.1370292, y: 1.9708254, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!50 &365834968
 Rigidbody2D:
   serializedVersion: 2
@@ -3166,7 +3166,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!61 &376457544
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6589,11 +6589,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1008715993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.758, y: 3.363, z: 0}
+  m_LocalPosition: {x: -1.758, y: 0.36299992, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 2058259242}
+  m_RootOrder: 236
 --- !u!1 &1013472444
 GameObject:
   m_ObjectHideFlags: 0
@@ -7204,7 +7204,7 @@ Transform:
   m_LocalScale: {x: 2.1370292, y: 1.9708254, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!50 &1108154512
 Rigidbody2D:
   serializedVersion: 2
@@ -11497,7 +11497,7 @@ Transform:
   m_LocalScale: {x: 2.1370292, y: 1.9708254, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!50 &1686527986
 Rigidbody2D:
   serializedVersion: 2
@@ -11712,7 +11712,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1706613716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14680,6 +14680,8 @@ Transform:
   - {fileID: 1226549708}
   - {fileID: 1126157532}
   - {fileID: 688250663}
+  - {fileID: 70551861}
+  - {fileID: 1008715996}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!1 &2071095607
