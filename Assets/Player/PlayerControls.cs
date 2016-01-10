@@ -14,8 +14,8 @@ public class PlayerControls : MonoBehaviour {
         anim = GetComponent<Animator>();
         r = GetComponent<Rigidbody2D>();
         r.gravityScale = 0;
-        cam = GetComponentInChildren<Camera>();
-        // cam = GameObject.Find("BackgroundNavyGridSprite").GetComponentInChildren<Camera>();
+        //cam = GetComponentInChildren<Camera>();
+         cam = GameObject.Find("Main Camera").GetComponentInChildren<Camera>();
         // above line is for camera that is not a child of this object
     }
 
@@ -40,9 +40,19 @@ public class PlayerControls : MonoBehaviour {
         anim.SetFloat("relativeAngle", mouseRelativeDeg);
 
         r.velocity = velo;
+        transform.localEulerAngles = new Vector3(0, 0, mouseRelativeDeg - 90);
 
-        if (hor < 0 && facingRight) Flip();
-        else if (hor > 0 && !facingRight) Flip();
+        if(ifMove())
+        {
+            anim.SetBool("move", true);
+        }
+
+        else
+        {
+            anim.SetBool("move", false);
+        }
+        //if (hor < 0 && facingRight) Flip();
+        //else if (hor > 0 && !facingRight) Flip();
 	
 	}
 
@@ -61,5 +71,12 @@ public class PlayerControls : MonoBehaviour {
         return 0;
     }
 
+    bool ifMove()
+    {
+        if (r.velocity.magnitude < 0.01f)
+            return false;
 
+        else
+            return true;
+    }
 }
