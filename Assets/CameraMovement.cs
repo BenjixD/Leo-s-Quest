@@ -5,7 +5,7 @@ public class CameraMovement : MonoBehaviour {
 
     Transform player;
     float distance;
-    float maxDist = 0.7f;
+    public float maxDist = 0.6f;
 
 	// Use this for initialization
 	void Start () {
