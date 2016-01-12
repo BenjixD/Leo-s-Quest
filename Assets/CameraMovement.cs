@@ -21,7 +21,6 @@ public class CameraMovement : MonoBehaviour {
     {
         player = GameObject.Find("Leo").GetComponent<Transform>();
         distance = Vector2.Distance(transform.position, player.position);
-        print(distance);
 
         while(distance > maxDist)
         {
