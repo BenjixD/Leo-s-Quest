@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11449528}
   m_Layer: 20
   m_Name: Arrow
-  m_TagString: projectile
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,6 +113,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_SortingLayerID
       value: -639670435
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Projectile
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Layer
