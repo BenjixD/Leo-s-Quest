@@ -12,7 +12,7 @@ public class Shooter: MonoBehaviour {
 	void Start () {
         prefab = Resources.Load<GameObject>("Prefabs/Arrow");
 
-        parentAnim = GetComponent<Animator>();
+        parentAnim = GetComponentInParent<Animator>();
 	}
 	
 	// Update is called once per frame

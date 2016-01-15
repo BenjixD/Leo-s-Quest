@@ -2532,7 +2532,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0.0071362574, y: -0.049147706}
   serializedVersion: 2
@@ -9692,7 +9692,6 @@ GameObject:
   - 95: {fileID: 407203760}
   - 114: {fileID: 407203762}
   - 114: {fileID: 407203763}
-  - 114: {fileID: 407203764}
   - 114: {fileID: 407203765}
   m_Layer: 23
   m_Name: Leo
@@ -9806,19 +9805,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0fd8f49b068c9241bc6919923fb6f09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &407203764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 407203757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0b8a929e5bfbd34e9d76bd1b8fa51f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projSpeed: 10
-  spawnModif: 2
 --- !u!114 &407203765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37177,6 +37163,7 @@ GameObject:
   - 124: {fileID: 1706613718}
   - 81: {fileID: 1706613717}
   - 114: {fileID: 1706613722}
+  - 50: {fileID: 1706613723}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -37262,7 +37249,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0061a42a606ce934890c5b13da9dc9f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 0.6
+  maxDist: 0.7
+--- !u!50 &1706613723
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1706613716}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 3.5
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1713930546
 GameObject:
   m_ObjectHideFlags: 0
@@ -46440,6 +46444,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2065568393}
   - 212: {fileID: 2065568394}
+  - 114: {fileID: 2065568395}
   m_Layer: 23
   m_Name: Bow
   m_TagString: Untagged
@@ -46489,6 +46494,19 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &2065568395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2065568392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0b8a929e5bfbd34e9d76bd1b8fa51f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projSpeed: 10
+  spawnModif: 3
 --- !u!1 &2065906764
 GameObject:
   m_ObjectHideFlags: 0
