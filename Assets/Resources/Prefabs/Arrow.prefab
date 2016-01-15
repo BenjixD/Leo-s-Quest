@@ -12,7 +12,7 @@ GameObject:
   - 61: {fileID: 6168482}
   - 50: {fileID: 5021108}
   - 114: {fileID: 11449528}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Arrow
   m_TagString: projectile
   m_Icon: {fileID: 0}
@@ -113,6 +113,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_SortingLayerID
       value: -639670435
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Layer
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
