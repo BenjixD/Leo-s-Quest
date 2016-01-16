@@ -9,8 +9,13 @@ public class SwitchWeapon : MonoBehaviour {
     private GameObject BowBody;
 
     void Start()
-    {
-        Weapon1 = GameObject.Find("Sword");
+    {	
+		Weapon1 = GameObject.Find("Sword");
+		if (Weapon1 == null) {
+			Debug.Log ("sword not found");
+		} else {
+			Debug.Log ("sword found!");
+		}	
         Weapon2 = GameObject.Find("Bow");
         SwordBody = GameObject.Find("Body");
         BowBody = GameObject.Find("Body2");
