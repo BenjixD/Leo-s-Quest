@@ -2473,6 +2473,7 @@ GameObject:
   - 4: {fileID: 112098115}
   - 212: {fileID: 112098116}
   - 61: {fileID: 112098117}
+  - 114: {fileID: 112098118}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -2486,7 +2487,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 112098114}
-  m_LocalRotation: {x: -0.0000008726647, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.121, y: -0.16299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2537,6 +2538,17 @@ BoxCollider2D:
   m_Offset: {x: 0.0071362574, y: -0.049147706}
   serializedVersion: 2
   m_Size: {x: 0.08170307, y: 0.22170603}
+--- !u!114 &112098118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112098114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0fd8f49b068c9241bc6919923fb6f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &112795017
 GameObject:
   m_ObjectHideFlags: 0
@@ -9691,7 +9703,6 @@ GameObject:
   - 50: {fileID: 407203761}
   - 95: {fileID: 407203760}
   - 114: {fileID: 407203762}
-  - 114: {fileID: 407203763}
   - 114: {fileID: 407203765}
   m_Layer: 23
   m_Name: Leo
@@ -9794,17 +9805,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
---- !u!114 &407203763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 407203757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0fd8f49b068c9241bc6919923fb6f09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &407203765
 MonoBehaviour:
   m_ObjectHideFlags: 0

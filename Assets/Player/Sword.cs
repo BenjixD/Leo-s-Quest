@@ -7,7 +7,7 @@ public class Sword : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        anim = GetComponent<Animator>();
+        anim = GetComponentInParent<Animator>();
     }
 	
 	// Update is called once per frame
@@ -19,7 +19,14 @@ public class Sword : MonoBehaviour {
     {
         if(Input.GetMouseButtonDown(0))
         {
-            anim.SetBool("slash", true);
+            anim.SetBool("attack", true);
         }
     }
+
+	void onTriggerEnter2D(Collision2D col) {
+		if (col.gameObject.layer == 19) {
+			Debug.Log ("Die, " + col.gameObject.name);
+			Destroy (col.gameObject);
+		}
+	}
 }

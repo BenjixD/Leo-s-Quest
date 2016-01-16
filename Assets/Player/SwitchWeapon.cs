@@ -7,6 +7,7 @@ public class SwitchWeapon : MonoBehaviour {
     private GameObject Weapon2;
     private GameObject SwordBody;
     private GameObject BowBody;
+	Animator anim;
 
     void Start()
     {	
@@ -19,6 +20,7 @@ public class SwitchWeapon : MonoBehaviour {
         Weapon2 = GameObject.Find("Bow");
         SwordBody = GameObject.Find("Body");
         BowBody = GameObject.Find("Body2");
+		anim = GetComponent<Animator>();
         Weapon2.SetActive(false);
         BowBody.SetActive(false);
     }
@@ -28,7 +30,7 @@ public class SwitchWeapon : MonoBehaviour {
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Q))
+		if (Input.GetKeyDown(KeyCode.Q) && !anim.GetBool("attack"))
         {
             switchWeapons();
         }
