@@ -20,11 +20,10 @@ public class Sword : MonoBehaviour {
 
     void FixedUpdate()
     {
-        if(Input.GetMouseButtonDown(0))
-        {
+        if (Input.GetMouseButtonDown(0))
             anim.SetBool("attack", true);
-            
-        }
+        //else if (Input.GetMouseButtonDown(1))
+            //anim.SetBool("attack2", true);
         hitbix.enabled = anim.GetBool("attack");
     }
 

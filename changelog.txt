@@ -1,0 +1,23 @@
+Nanson: 2016-01-18 2:13 AM
+
+- Added HP system
+	- Currently works as a child gameObject of entity. Attach an empty gameObject to entity, add a collider of same properties as parent object, and attach the HitPoints script (found in Player folder).
+	
+- Added Invincibility system (Under the HP system)
+	- So far, nothing triggers invincibility except getting hit, so invincibility will be in the HitPoints script.
+	- Calls a co-routine which disables the corresponding hitbox for X seconds, then re-enables it.
+
+- Made some changes to ProjectileBehaviour to better interact with hitboxes / HP
+	- Projectile hitboxes will now be destroyed after 0.2 seconds to allow more consistent hit checks with identical size colliders (What I assume to be the norm for future monsters)
+	
+- Modified Shooter
+	- Projectile layer is now the same layer as the shooter. E.g. if an enemy (layer 19) fires an arrow, that arrow will also be layer 19. Done for shooter identification reasons.
+	
+- Made a sword attack animation SwordAttack2
+	- Actually swings the sword.
+	- Present as a state without transitions in Sword layer of Leo's animator.
+
+- Known bugs
+	- SwordEnemy appears to move around when the camera moves with the character, but actually doesn't move (position is unchanged, no parent reference)
+	- When trying out SwordAttack2, Leo's position may be off. 
+		- Workaround: make sure Leo is set correctly before starting the game by going to the animation: click the red circle, and click on the first keyframe (diamond), so that Leo is at the reference position.

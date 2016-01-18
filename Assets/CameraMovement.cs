@@ -22,7 +22,17 @@ public class CameraMovement : MonoBehaviour {
 
     void FixedUpdate()
     {
-        player = GameObject.Find("Leo").GetComponent<Transform>();
+        try
+        {
+            player = GameObject.Find("Leo").GetComponent<Transform>();
+        }
+        catch (System.NullReferenceException)
+        {
+            Debug.Log("GG");
+            Time.timeScale = 0.0f;
+            throw;
+        }
+        
         distance = Vector2.Distance(transform.position, player.position);
 
         if (distance > maxDist)
